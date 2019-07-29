@@ -12,17 +12,34 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-bg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
       <div class="container-fluid">
         <span class="fa-stack fa 2x">
           <i class="fas fa-desktop fa-stack-2x"></i>
            <!--FIX:Need to align second icon-->
           <i class="fas fa-code fa-stack-1x"></i>
         </span>
-        <button class="navbar-toggler" type="button" data-toggle="collapse">
-
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>  
+        <div class="collapse navbar-collapse" id="#navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!--FIX:Need to add links to site-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+       </div>  
     </nav>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
