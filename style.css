@@ -11,6 +11,26 @@ body {
     color: var(--color);
 }
 
+.fa-desktop {
+    position: relative;
+}
+
+.fa-code {
+    position: absolute;
+    bottom: 3px;
+}
+.fa-desktop::after {
+    content: "DEV";
+    position: absolute;
+    left: 3rem;
+    font-size: 1.5rem;
+}
+
+.skills::before {
+    content: "Skills";
+    font-weight: bold;
+}
+
 [class*="col-"] {
     padding: 1rem;
 }
