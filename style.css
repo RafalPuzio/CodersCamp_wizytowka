@@ -23,10 +23,11 @@ body {
 }
 
 .fa-desktop::after {
-    content: "DEV";
+    content: "Dev";
     position: absolute;
     left: 3rem;
     font-size: 1.5rem;
+    font-family: var(--font-family);
 }
 
 .skills::before {
