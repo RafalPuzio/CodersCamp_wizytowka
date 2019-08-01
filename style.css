@@ -1,7 +1,16 @@
 :root {
    --background-color: #fffff0;
+   --color: #E5C100;
 }
 
 body {
     background-color: var(--background-color);
+}
+
+.color {
+    color: var(--color);
+}
+
+[class*="col-"] {
+    padding: 1rem;
 }
