@@ -1,10 +1,12 @@
 :root {
    --background-color: #fffff0;
    --color: #E5C100;
+   --font-family: 'Raleway', sans-serif;
 }
 
 body {
     background-color: var(--background-color);
+    font-family: var(--font-family);
 }
 
 .color {
