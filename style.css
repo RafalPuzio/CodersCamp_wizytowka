@@ -1,7 +1,14 @@
 :root {
    --background-color: #fffff0;
-   --color: #E5C100;
+   --color: #FFC53D;
+   --color-light: #FFFFFF;
    --font-family: 'Raleway', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,14 +16,76 @@ body {
     font-family: var(--font-family);
 }
 
+
+ul {
+    list-style: none;
+}
+
 .header-image {
     background-image: url("img/cover photo.png");
     position: relative;
-    width: 1440px;
-    height: 585px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.header-image__wrapper {
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.header-image__title {
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color);
+}
+
+.header-image__intro {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-light);
+}
+
+.header-image__social {
+    text-align: center;
+    
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+}
+    
 .icon-title {
+    color: var(--color);
+}
+
+.header-info__title {
+    text-align: center;
+}
+
+.header-info_buttons {
+    text-align: center;
+}
+
+.header-info__button {
+    margin: 0 10px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    height: 50px;
+    width: 200px;
+    color: var(--color-light);
+    font-weight: bold;
+    transition: 0,5s;
+}
+
+.header-info__button:hover {
+    background: var(--background-color);
+    border: 1px dotted var(--color);
     color: var(--color);
 }
 

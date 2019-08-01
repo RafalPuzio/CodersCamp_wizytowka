@@ -11,12 +11,14 @@
     <script src="https://kit.fontawesome.com/15bf67bdc2.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <!-- FIX: anchor to the logo -->
+    <!-- FIX: navigation not expanding to all width -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <span class="fa-stack fa 2x">
           <i class="fas fa-desktop fa-stack-2x"></i>
@@ -45,31 +47,32 @@
        </div>  
     </nav>
     <!--header-->
+    <!--FIX Need to chnage sizes of h1-h6-->
+    <!--FIX Need to add some padding-->
+    <!--FIX Blend image with anther image-->
     <header>
       <div class="header">
         <div class="header-image">
-          <div class="header-image-title"><h1>Welcome!</h1></div>
-          <div class="header-image-intro"><h3>My name is designer!</h3></div>
-          <ul class="header-social">
-            <li class="scoial-icon"><a href="#"><img src="img/twitter.png"></a></li>
-            <li class="scoial-icon"><a href="#"><img src="img/linkedin.png"></a></li>
-            <li class="scoial-icon"><a href="#"><img src="img/github.png"></a></li>
-            <li class="scoial-icon"><a href="#"><img src="img/facebook.png"></a></li>
-          </ul>
+          <div class="header-image__wrapper">
+              <div class="header-image__title"><h1 class="font-weight-bold">Welcome!</h1></div>
+              <div class="header-image__intro"><h3 class="font-weight-bold">My name is Designer.</h3></div>
+              <ul class="header-image__social">
+                <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="header-info">
+          <div class="header-info__title"><h3>I am happy to help you with any problem!</h3></div>
+          <div class="header-info_buttons">
+            <button type="button" class="header-info__button">Contact me!</button>
+            <button type="button" class="header-info__button">Check my CV!</button>
+          </div>
         </div>
       </div>
     </header>
-      <!--section1 
-      container with with background image
-      h1? Welcoming text
-      h3? Introduction
-      3 button link to social media-->
-      <!--section2-->
-        <!--container 
-        h3? "happy to help"
-        2 buttons with hover effect
-        first one => contact me
-        second one => check my CV -->
     <!--section3 -ABOUT ME
       h3? "About me" bolded with :before
       Container with 3 columns
@@ -78,7 +81,10 @@
       data with goldish? color
       dotted border: on the rigth goldish?
       Third column: Description: Lorem ipsum text align to the left-->
-    <!--section4 -SKILLS-->
+    <!--Skills-->
+    <!--FIX:dotted border between element (need to erase gap) -->
+    <!--FIX: spacin bettwen image icon-title-->
+    <!-- FIX: change class names to more BEM style -->
     <div class="container-fluid skills">
       <div class="row text-center">
         <div class="col-xs-12 col-sm-6 col-md-4">
@@ -98,7 +104,6 @@
         </div>
       </div>
     </div>
-    <!--golden dotted border dividing skill columns -->
     <!--section5 -PORTFOLIO
        h3? "PORTFOLIO" bolded with :before
       1 row 3 photo images
