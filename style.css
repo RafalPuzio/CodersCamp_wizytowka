@@ -22,7 +22,7 @@ ul {
 }
 
 .header-image {
-    background-image: url("img/cover photo.png");
+    background-image: url("img/header_photo.png");
     position: relative;
     width: 100vw;
     background-repeat: no-repeat;
@@ -106,18 +106,12 @@ ul {
     font-family: var(--font-family);
 }
 
-.skills::before {
-    display: flex;
-    content: "Skills";
-    font-weight: bold;
-    justify-content: center;
-}
-
 .about-me::before {
     display: flex;
     content: "About Me";
     font-weight: bold;
     justify-content: center;
+    font-size: 32px;
 }
 
 .about-me__photo {
@@ -132,6 +126,14 @@ ul {
 
 .about-me__info span {
     color: var(--color);
+}
+
+.skills::before {
+    display: flex;
+    content: "Skills";
+    font-weight: bold;
+    justify-content: center;
+    font-size: 32px;
 }
 
 /* .about-me__description {
