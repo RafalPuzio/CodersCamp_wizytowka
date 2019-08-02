@@ -113,6 +113,36 @@ ul {
     justify-content: center;
 }
 
+.about-me::before {
+    display: flex;
+    content: "About Me";
+    font-weight: bold;
+    justify-content: center;
+}
+
+.about-me__photo {
+    border-radius: 50%;
+    text-align: center;
+}
+.about-me__info p {
+    text-align: left;
+    line-height: 19px;
+    font-weight: bold;
+}
+
+.about-me__info span {
+    color: var(--color);
+}
+
+/* .about-me__description {
+    border-left: 4px dotted var(--color)
+} */
+
+.about-me__description p {
+    text-align: left;
+    line-height: 31px;
+}
+
 [class*="col-"] {
     padding: 1rem;
 }
