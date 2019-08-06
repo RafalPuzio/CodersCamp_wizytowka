@@ -7,60 +7,52 @@
     <meta name="description" content="Pierwszy projekt dla szkolenia CodersCamp " />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/15bf67bdc2.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/15bf67bdc2.js"></script>
   </head>
 
   <body>
-    <!--navbar-->
-    <!-- FIX: anchor to the logo -->
-    <!-- FIX: navigation not expanding to all width -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"> 
       <div class="container-fluid">
-        <span class="fa-stack fa 2x">
+        <a class="logo" href="#"><span class="fa-stack fa 2x">
           <i class="fas fa-desktop fa-stack-2x"></i>
           <i class="fas fa-code fa-stack-1x"></i>
-        </span>
+        </span></a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>  
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <!--FIX:Need to add links to site-->
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>About me</b></a>
+              <a class="nav-link" href="#about"><b>About me</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>Skills</b></a>
+              <a class="nav-link" href="#skills"><b>Skills</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>Portfolio</b></a>
+              <a class="nav-link" href="#portfolio"><b>Portfolio</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>Contact</b></a>
+              <a class="nav-link" href="#contact"><b>Contact</b></a>
             </li>
           </ul>
         </div>
        </div>  
     </nav>
     <!--header-->
-    <!--FIX Need to chnage sizes of h1-h6-->
-    <!--FIX Need to add some padding-->
     <!--FIX Blend image with anther image-->
     <header>
       <div class="header">
         <div class="header-image">
           <div class="header-image__wrapper">
-              <div class="header-image__title"><h1 class="font-weight-bold">Welcome!</h1></div>
-              <div class="header-image__intro"><h3 class="font-weight-bold">My name is Designer.</h3></div>
+            <div class="header-image__title"><h1 class="font-weight-bold display-1">Welcome!</h1></div>
+            <div class="header-image__intro"><h3 class="font-weight-bold">My name is Designer.</h3></div>
               <ul class="header-image__social">
-                <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
-                <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
-                <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
-                <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
+                <li class="social-icon"><a href="https://twitter.com/" target="_blank"><img src="img/twitter.png"></a></li>
+                <li class="social-icon"><a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.png"></a></li>
+                <li class="social-icon"><a href="https://github.com/" target="_blank"><img src="img/github.png"></a></li>
+                <li class="social-icon"><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png"></a></li>
               </ul>
           </div>
         </div>
@@ -77,28 +69,28 @@
     <!--FIX: must juggle with offset values-->
     <!--FIX: Needs styling in @media-->
     <!--FIX: Needs some padding-->
-    <section class="container-fluid about-me">
+    <section id="about" class="container-fluid about-me">
       <div class="row no-gutters">
-        <div class="col-xs-12 col-sm-3 col-md-2 offset-md-1 text-center">
+        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
           <img class="about-me__photo" src="img/aboutme-photo.png">
         </div>
-        <div class="col-xs-12 col-sm-7 col-md-3 offset-sm-1 offset-md-0 about-me__info">
+        <div class="col-xs-12 col-sm-7 col-md-4 about-me__info">
           <p>Full name: <span>Designer</span><br></p>
           <p>Age: <span>21</span><br></p>
           <p>Profile: <span>Fullstack</span><br></p>
           <p>Telephone: <span>+48 123-456-789</span><br></p>
           <p>E-mail: <span>night-coding@dev.com</span><br></p>
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-5 about-me__description">
+        <div class="col-xs-10 col-sm-10 col-md-6 about-me__description">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
         </div>
       </div>
     </section>
     <!--Skills-->
-    <!--FIX:dotted border between element (need to erase gap) -->
+    <!--FIX:dotted border between element-->
     <!--FIX:spacing bettwen image icon-title and text-->
     <!--FIX:change class names to more BEM style -->
-    <section class="container-fluid skills">
+    <section id="skills" class="container-fluid no-gutters skills">
       <div class="row text-center">
         <div class="col-xs-12 col-sm-6 col-md-4">
           <img src="img/icon_UxUi.png">
@@ -106,30 +98,109 @@
           <p>Figma</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <img src="img/icon_frontend.png">
-            <h6 class="icon-title">Front end</h6>
-            <p>HTML, CSS, JavaScript</p>
+          <img src="img/icon_frontend.png">
+          <h6 class="icon-title">Front end</h6>
+          <p>HTML, CSS, JavaScript</p>
         </div>
         <div class="col-sm-12 col-md-4">
-            <img src="img/icon_backend.png">
-            <h6 class="icon-title">Back end</h6>
-            <p>PHP, Node js</p>
+          <img src="img/icon_backend.png">
+          <h6 class="icon-title">Back end</h6>
+          <p>PHP, Node js</p>
         </div>
       </div>
     </section>
-    <!--section5 -PORTFOLIO
-       h3? "PORTFOLIO" bolded with :before
-      1 row 3 photo images
+    <!--portfolio-->
+    <section>
+ 
+
+      <div id="portfolio" class="container-fluid no-gutters portfolio_container no-padding">
+        <div class="row d-flex flex-wrap align-content-stretch no-gutters text-center portfolio_photos" style:"background-size:cover;"> 
+          <div class="col-md-7 col-lg-4">
+            <figure>
+              <img class="img-fluid portfolio_photos__photo1" src="img/portfolio_photo1.png">
+            </figure>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <figure>
+              <img class="img-fluid portfolio_photos__photo2" src="img/portfolio_photo2.png">
+            </figure>
+          </div>
+          <div class="col-md-7 col-lg-4">
+            <figure>
+              <img class="img-fluid portfolio_photos__photo3" src="img/portfolio_photo3.png">
+            </figure>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <figure>
+              <img class="img-fluid portfolio_photos__photo4" src="img/portfolio_photo4.png">
+            </figure>
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <figure>
+              <img class="img-fluid portfolio_photos__photo5" src="img/portfolio_photo5.png">
+            </figure>
+          </div>
+        </div> 
+      </div> 
+    </section>
+    <!-- "PORTFOLIO" bolded with :before
       1 photo transparent overlay with design text, descrpition, and button
-      2 row 2 photo images
-      2 photo transparent overlay with design text, descrpition, and button-->  
-    <!--section6 -CONTACT US
-      h3? "CONTACT US" bolded with :before
-      2 colums
-      first column ICON text 3 social media icons, then adress
-      second column FORM wit 4 inputs: Name,e-mail,topic,message. send button-->
-    <!--FOOTER
-      Copyrights © 2019 CodersCrew-->
-    
+      2 photo transparent overlay with design text, descrpition, and button--> 
+
+    <!--section6 -CONTACT US -->
+    <section id="contact" class="contact">
+      <div class="contact__tilte">
+        <h3>Contact us</h3>
+        
+        <div class="row no-gutters contact_container">
+          <div class="col-xs-12 col-sm-10 col-md-5 contact-container-adress">
+            <img src="img/logo_message.png">
+            <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+            <ul class="header-image__social">
+              <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
+              <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
+              <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
+              <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
+            </ul>
+            <p><span>Designer<br>Poland, Wrocław<br></span> ul. Tęczowa 12/3 50-000 <br>+48 123-456-789 <br>night-coding@dev.com</ul.>
+          </div>
+          <div class="col-xs-12 col-sm-10 col-md-7 contact-container-form">
+            <div class="contact-container-form__title">
+              <h3>Let’s start!</h3>
+            </div>
+            <div class="contact-container-form_form">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your e-mail adress">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Topic">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="&#13;&#10;&#13;&#10;Message"></textarea>
+                </div class>
+                <div class="form_button">
+                  <button type="button" class="form__button">Send</button>
+                </div>
+            </form>
+            </div>
+
+          </div>
+
+          
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <h6>Copyrights © 2019 CodersCrew</h6>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
