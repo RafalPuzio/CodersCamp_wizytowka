@@ -36,7 +36,7 @@ ul {
 .header-image {
     background-image: url("img/header_photo.png");
     position: relative;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -168,15 +168,11 @@ ul {
 .about-me__info span {
     color: var(--color);
 }
-.no-padding {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.about-me__description p {
+.about-me__description p{
     text-align: left;
     line-height: 31px;
-    padding:20px 0 0 0;
+    /* padding:20px 0 0 0; */
+    margin:0;
 }
 
 .skills-column1 {
@@ -187,7 +183,7 @@ ul {
     border-top: 4px dotted var(--color);
 }
 .skills__icon-title {
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 0; 
     color: var(--color);
 }
 
@@ -200,16 +196,52 @@ ul {
     margin: 0, auto;
 }
  
+[class*="fig"] {
+    position: relative;
+    width: auto;
+    height: 300px;
+ 
+}
 
-/* .portfolio_container { //GRID,kinda works, but not quite
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) ); 
-  /*  grid-template-columns: repeat(8,1fr); 
-    display: grid; 
-    margin: 0 auto;
-  } */
+.portfolio_column__fig1 {
+    background: url(img/portfolio_photo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
 
-.contact_container {
-  background-color: var(--color-middle); 
+.portfolio_column__fig2 {
+    background: url(img/portfolio_photo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.portfolio_column__fig3 {
+    background: url(img/portfolio_photo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.portfolio_column__fig4 {
+    background: url(img/portfolio_photo4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.portfolio_column__fig5 {
+    background: url(img/portfolio_photo5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.contact_container-row {
+  background-color: var(--color-middle);
+  padding: 0;
+  margin: 0, auto; 
 }
 .contact-container-adress {
 
@@ -228,10 +260,6 @@ ul {
   background-color: var(--color-gray);
 }
 
-figure img {
-    display: block;
-    
-}
 
 
 .row.no-gutters {
@@ -252,7 +280,14 @@ figure img {
 .about-me__description {
     border-left: none;
     border-top: 4px dotted var(--color);
-  
+}
+
+.form-control {
+
+    background-color: var(--color-gray);
+    width: 85%;
+    margin:0 0 0 40px;
+    border-radius: 15px;
 }
 
 @media (min-width: 576px){  

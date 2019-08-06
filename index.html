@@ -67,7 +67,7 @@
     </header>
     <!--About Me-->
     <section id="about" class="container-fluid about-me">
-      <div class="aboutme__tilte">
+      <div class="about-me__title">
         <h3><b>About me</b></h3>
        <div class="row no-gutters">
          <div class="col-xs-12 col-sm-3 col-md-2 text-center">
@@ -110,39 +110,28 @@
       </div>
     </section>
     <!--portfolio-->
-    <section>
+    <section id="portfolio">
       <div class="portfolio__tilte">
         <h3><b>Portfolio</b></h3>
-
-        <div id="portfolio" class="container-fluid no-gutters portfolio_container no-padding">
-          <div class="row d-flex flex-wrap align-content-stretch no-gutters text-center portfolio_photos"> 
-            <div class="col-md-7 col-lg-4">
-              <figure>
-                <img class="img-fluid portfolio_photos__photo1" src="img/portfolio_photo1.png">
-              </figure>
-            </div>
-            <div class="col-md-5 col-lg-4">
-             <figure>
-               <img class="img-fluid portfolio_photos__photo2" src="img/portfolio_photo2.png">
-             </figure>
-            </div>
-            <div class="col-md-7 col-lg-4">
-              <figure>
-                <img class="img-fluid portfolio_photos__photo3" src="img/portfolio_photo3.png">
-              </figure>
-             </div>
-            <div class="col-md-5 col-lg-4">
-              <figure>
-                <img class="img-fluid portfolio_photos__photo4" src="img/portfolio_photo4.png">
-              </figure>
-            </div>
-            <div class="col-md-12 col-lg-8">
-              <figure>
-                <img class="img-fluid portfolio_photos__photo5" src="img/portfolio_photo5.png">
-              </figure>
-            </div>
-          </div> 
-        </div>
+        <div class=container-fluid>
+          <div class="row">
+            <figure class="col-12 col-sm-7 col-md-4 portfolio_column__fig1">         
+              <img class="img-fluid">          
+            </figure>
+            <figure class="col-12 col-sm-5 col-md-4 portfolio_column__fig2">   
+              <img class="img-fluid">     
+            </figure>
+            <figure class="col-12 col-sm-7 col-md-4 portfolio_column__fig3">
+              <img class="img-fluid">  
+            </figure>
+            <figure class="col-12 col-sm-5 col-md-3 portfolio_column__fig4">       
+              <img class="img-fluid">
+            </figure>
+            <figure class="col-12 col-sm-12 col-md-9 portfolio_column__fig5">
+              <img class="img-fluid">
+            </figure>
+          </div>
+        </div> 
       </div>
     </section>
     <!-- 
@@ -153,46 +142,45 @@
     <section id="contact" class="contact">
       <div class="contact__tilte">
         <h3><b>Contact us</b></h3>
-        
-        <div class="row no-gutters contact_container">
-          <div class="col-xs-12 col-sm-10 col-md-5 contact-container-adress">
-            <img src="img/logo_message.png">
-            <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
-            <ul class="header-image__social">
-              <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
-              <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
-              <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
-              <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
-            </ul>
-            <p><span>Designer<br>Poland, Wrocław<br></span> ul. Tęczowa 12/3 50-000 <br>+48 123-456-789 <br>night-coding@dev.com</ul.>
-          </div>
-          <div class="col-xs-12 col-sm-10 col-md-7 contact-container-form">
-            <div class="contact-container-form__title">
-              <h3>Let’s start!</h3>
+        <div class="container contact_container">
+          <div class="row no-gutters contact_container-row">
+            <div class="col-xs-12 col-sm-12 col-md-5 contact-container-adress">
+              <img src="img/logo_message.png">
+              <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+              <ul class="header-image__social">
+                <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
+              </ul>
+              <p><span>Designer<br>Poland, Wrocław<br></span> ul. Tęczowa 12/3 50-000 <br>+48 123-456-789 <br>night-coding@dev.com</ul.>
             </div>
-            <div class="contact-container-form_form">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
+            <div class="col-xs-12 col-sm-12 col-md-7 contact-container-form">
+              <div class="contact-container-form__title">
+                <h3>Let’s start!</h3>
+              </div>
+              <div class="contact-container-form_form">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your e-mail adress">
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Your e-mail adress">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Topic">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="&#13;&#10;&#13;&#10;Message"></textarea>
+                  </div class>
+                  <div class="form_button">
+                    <button type="button" class="form__button">Send</button>
+                  </div>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Topic">
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" rows="5" placeholder="&#13;&#10;&#13;&#10;Message"></textarea>
-                </div class>
-                <div class="form_button">
-                  <button type="button" class="form__button">Send</button>
-                </div>
-            </form>
+              </div>
             </div>
-
           </div>
-
-          
         </div>
       </div>
 
