@@ -1,11 +1,11 @@
 :root {
-   --color: #FFC53D;
-   --color-middle:#FF9A3D;
-   --color-light: #FFFFFF;
-   --color-gray: #FAFAFF;
+   --color: #ffc53d;
+   --color-middle:#ff9a3d;
+   --color-light: #ffffff;
+   --color-gray: #fafaff;
    --color-dark: #000000;
    --font-primary-family: 'Raleway', sans-serif;
-   --font-secondary-family: 'Roboto', 'Raleway', sans-serif;
+   --font-secondary-family: 'Ubuntu', sans-serif;
 }
 
 *{
@@ -43,8 +43,14 @@ ul {
 
 .header-image__wrapper {
     padding-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
+    height:585px;
+    background: url("img/cover_layer.png");
+    mix-blend-mode: lighten;
+    background-position: center;
 }
+
+
 
 .header-image__title {
     padding: 50px 0 0 0;
@@ -54,7 +60,7 @@ ul {
 }
 
 .header-info__title h3 {
-    padding: 0px 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .header-image__intro {
@@ -174,7 +180,9 @@ ul {
     /* padding:20px 0 0 0; */
     margin:0;
 }
-
+.about-me__title {
+    font-family: var(--font-secondary-family);
+}
 .skills-column1 {
     border-bottom: 4px dotted var(--color);
 }
@@ -260,7 +268,9 @@ ul {
   background-color: var(--color-gray);
 }
 
-
+.contact__title {
+    font-family: var(--font-secondary-family);
+}
 
 .row.no-gutters {
     margin: 0;
@@ -288,8 +298,24 @@ ul {
     width: 85%;
     margin:0 0 0 40px;
     border-radius: 15px;
+    font-family: var(--font-secondary-family);
 }
 
+.contact-container-adress {
+    position: relative;
+}
+
+p:nth-last-of-type(1){
+    font-family: var(--font-secondary-family);
+    position: absolute;
+    bottom: 0; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0px 5px;
+    color: #A0A0A0;
+}
 @media (min-width: 576px){  
 
     .about-me__description {
