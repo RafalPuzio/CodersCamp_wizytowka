@@ -8,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Ubuntu:400,700&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/15bf67bdc2.js"></script>
   </head>
-
+  <!--navbar-->
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"> 
       <div class="container-fluid">
@@ -70,20 +70,23 @@
     <!--FIX: Needs styling in @media-->
     <!--FIX: Needs some padding-->
     <section id="about" class="container-fluid about-me">
-      <div class="row no-gutters">
-        <div class="col-xs-12 col-sm-3 col-md-2 text-center">
-          <img class="about-me__photo" src="img/aboutme-photo.png">
-        </div>
-        <div class="col-xs-12 col-sm-7 col-md-4 about-me__info">
-          <p>Full name: <span>Designer</span><br></p>
-          <p>Age: <span>21</span><br></p>
-          <p>Profile: <span>Fullstack</span><br></p>
-          <p>Telephone: <span>+48 123-456-789</span><br></p>
-          <p>E-mail: <span>night-coding@dev.com</span><br></p>
-        </div>
-        <div class="col-xs-10 col-sm-10 col-md-6 about-me__description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
-        </div>
+      <div class="aboutme__tilte">
+        <h3><b>About me</b></h3>
+       <div class="row no-gutters">
+         <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+            <img class="about-me__photo" src="img/aboutme-photo.png">
+          </div>
+         <div class="col-xs-12 col-sm-7 col-md-4 about-me__info">
+           <p>Full name: <span>Designer</span><br></p>
+           <p>Age: <span>21</span><br></p>
+           <p>Profile: <span>Fullstack</span><br></p>
+           <p>Telephone: <span>+48 123-456-789</span><br></p>
+           <p>E-mail: <span>night-coding@dev.com</span><br></p>
+         </div>
+         <div class="col-xs-10 col-sm-10 col-md-6 about-me__description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
+         </div>
+       </div>
       </div>
     </section>
     <!--Skills-->
@@ -91,66 +94,71 @@
     <!--FIX:spacing bettwen image icon-title and text-->
     <!--FIX:change class names to more BEM style -->
     <section id="skills" class="container-fluid no-gutters skills">
-      <div class="row text-center">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="img/icon_UxUi.png">
-          <h6 class="icon-title">UX/UI</h6>
-          <p>Figma</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <img src="img/icon_frontend.png">
-          <h6 class="icon-title">Front end</h6>
-          <p>HTML, CSS, JavaScript</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <img src="img/icon_backend.png">
-          <h6 class="icon-title">Back end</h6>
-          <p>PHP, Node js</p>
+      <div class="skills__tilte">
+        <h3><b>Skills</b></h3>
+       <div class="row text-center">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="img/icon_UxUi.png">
+            <h6 class="icon-title">UX/UI</h6>
+            <p>Figma</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+           <img src="img/icon_frontend.png">
+           <h6 class="icon-title">Front end</h6>
+           <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+           <img src="img/icon_backend.png">
+           <h6 class="icon-title">Back end</h6>
+           <p>PHP, Node js</p>
+          </div>
         </div>
       </div>
     </section>
     <!--portfolio-->
     <section>
- 
+      <div class="portfolio__tilte">
+        <h3><b>Portfolio</b></h3>
 
-      <div id="portfolio" class="container-fluid no-gutters portfolio_container no-padding">
-        <div class="row d-flex flex-wrap align-content-stretch no-gutters text-center portfolio_photos" style:"background-size:cover;"> 
-          <div class="col-md-7 col-lg-4">
-            <figure>
-              <img class="img-fluid portfolio_photos__photo1" src="img/portfolio_photo1.png">
-            </figure>
-          </div>
-          <div class="col-md-5 col-lg-4">
-            <figure>
-              <img class="img-fluid portfolio_photos__photo2" src="img/portfolio_photo2.png">
-            </figure>
-          </div>
-          <div class="col-md-7 col-lg-4">
-            <figure>
-              <img class="img-fluid portfolio_photos__photo3" src="img/portfolio_photo3.png">
-            </figure>
-          </div>
-          <div class="col-md-5 col-lg-4">
-            <figure>
-              <img class="img-fluid portfolio_photos__photo4" src="img/portfolio_photo4.png">
-            </figure>
-          </div>
-          <div class="col-md-12 col-lg-8">
-            <figure>
-              <img class="img-fluid portfolio_photos__photo5" src="img/portfolio_photo5.png">
-            </figure>
-          </div>
-        </div> 
-      </div> 
+        <div id="portfolio" class="container-fluid no-gutters portfolio_container no-padding">
+          <div class="row d-flex flex-wrap align-content-stretch no-gutters text-center portfolio_photos" style:"background-size:cover;"> 
+            <div class="col-md-7 col-lg-4">
+              <figure>
+                <img class="img-fluid portfolio_photos__photo1" src="img/portfolio_photo1.png">
+              </figure>
+            </div>
+            <div class="col-md-5 col-lg-4">
+             <figure>
+               <img class="img-fluid portfolio_photos__photo2" src="img/portfolio_photo2.png">
+             </figure>
+            </div>
+            <div class="col-md-7 col-lg-4">
+              <figure>
+                <img class="img-fluid portfolio_photos__photo3" src="img/portfolio_photo3.png">
+              </figure>
+             </div>
+            <div class="col-md-5 col-lg-4">
+              <figure>
+                <img class="img-fluid portfolio_photos__photo4" src="img/portfolio_photo4.png">
+              </figure>
+            </div>
+            <div class="col-md-12 col-lg-8">
+              <figure>
+                <img class="img-fluid portfolio_photos__photo5" src="img/portfolio_photo5.png">
+              </figure>
+            </div>
+          </div> 
+        </div>
+      </div>
     </section>
-    <!-- "PORTFOLIO" bolded with :before
+    <!-- 
       1 photo transparent overlay with design text, descrpition, and button
       2 photo transparent overlay with design text, descrpition, and button--> 
 
     <!--section6 -CONTACT US -->
     <section id="contact" class="contact">
       <div class="contact__tilte">
-        <h3>Contact us</h3>
+        <h3><b>Contact us</b></h3>
         
         <div class="row no-gutters contact_container">
           <div class="col-xs-12 col-sm-10 col-md-5 contact-container-adress">
