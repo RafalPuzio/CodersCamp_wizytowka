@@ -54,7 +54,7 @@ ul {
 }
 
 .header-info__title h3 {
-    padding: 10px 0 20px 0;
+    padding: 0px 0 20px 0;
 }
 
 .header-image__intro {
@@ -129,6 +129,12 @@ ul {
     text-align: center;
 }
 
+.form__button:hover {
+    background: var(--background-color);
+    border: 1px dotted var(--color);
+    color: var(--color);
+}
+
 .fa-desktop {
     position: relative;
     color: var(--color-dark);
@@ -170,27 +176,30 @@ ul {
 .about-me__description p {
     text-align: left;
     line-height: 31px;
+    padding:20px 0 0 0;
+}
+
+.skills-column1 {
+    border-bottom: 4px dotted var(--color);
+}
+
+.skills-column3 {
+    border-top: 4px dotted var(--color);
+}
+.skills__icon-title {
+    padding: 10px 0 0 0;
+    color: var(--color);
+}
+
+.skills_container img{
+    padding: 20px 0 0 0;
 }
 
 .portfolio_container {
     padding: 0;
     margin: 0, auto;
 }
- .portfolio::before {
-    display: flex;
-    content: "Portfolio";
-    font-weight: bold;
-    justify-content: center;
-    font-size: 32px;
-} 
-
-figure {
-position: relative;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
+ 
 
 /* .portfolio_container { //GRID,kinda works, but not quite
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) ); 
@@ -221,43 +230,18 @@ position: relative;
 
 figure img {
     display: block;
-}
-/* Tried to c
-figure>.portfolio_photos__photo1 {
-    background-size:cover;
-    position:relative;
+    
 }
 
-.portfolio_photos__photo1 {
-    position:relative;
-    background-image: url(img/portfolio_photo1.png);
-    background-size:cover;
-}
 
-.portfolio_photos__photo2 {
-    background-image: url(img/portfolio_photo2.png);
-}
-
-.portfolio_photos__photo3 {
-    background-image: url(img/portfolio_photo3.png);
-}
-
-.portfolio_photos__photo4 {
-    background-image: url(img/portfolio_photo4.png);
-}
-
-.portfolio_photos__photo5 {
-    background-image: url(img/portfolio_photo5.png);
-}
-*/
 .row.no-gutters {
     margin: 0;
     padding: 0;
   }
   .row.no-gutters > [class^="col-"],
   .row.no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
+    padding: 0;
   }
   
 [class*="col-"] {
@@ -268,7 +252,7 @@ figure>.portfolio_photos__photo1 {
 .about-me__description {
     border-left: none;
     border-top: 4px dotted var(--color);
-    padding: 5px 0 0 0;
+  
 }
 
 @media (min-width: 576px){  
@@ -276,7 +260,16 @@ figure>.portfolio_photos__photo1 {
     .about-me__description {
         border-left: none;
         border-top: 4px dotted var(--color);
-        padding: 5px 0 0 0;
+     
+    }
+
+    .skills-column1 {
+        border-bottom: none;
+        border-right: 4px dotted var(--color);
+    }
+    
+    .skills-column3 {
+        border-top: 4px dotted var(--color);
     }
 }
 
@@ -284,21 +277,37 @@ figure>.portfolio_photos__photo1 {
     .about-me__description {
         border-top: none;
         border-left: 4px dotted var(--color);
-        padding: 0 0 0 300px;
+      
+    }
+
+    .about-me__description p {
+        text-align: left;
+        line-height: 31px;
+        padding:0 0 0 20px;
+    }
+
+    .skills-column1 {
+        border-bottom: none;
+        border-right: 4px dotted var(--color);
+    }
+    
+    .skills-column3 {
+        border-top: none;
+        border-left: 4px dotted var(--color);
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 992px)  { 
 .about-me__description {
     border-top: none;
     border-left: 4px dotted var(--color);
-    padding: 0 0 0 300px;
+ 
 }
 }
 @media (min-width: 1200px) { 
 .about-me__description {
     border-top: none;
     border-left: 4px dotted var(--color);
-    padding: 0 0 0 300px;
+  
 }
 }

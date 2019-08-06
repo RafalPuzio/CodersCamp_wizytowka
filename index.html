@@ -66,9 +66,6 @@
       </div>
     </header>
     <!--About Me-->
-    <!--FIX: must juggle with offset values-->
-    <!--FIX: Needs styling in @media-->
-    <!--FIX: Needs some padding-->
     <section id="about" class="container-fluid about-me">
       <div class="aboutme__tilte">
         <h3><b>About me</b></h3>
@@ -76,40 +73,37 @@
          <div class="col-xs-12 col-sm-3 col-md-2 text-center">
             <img class="about-me__photo" src="img/aboutme-photo.png">
           </div>
-         <div class="col-xs-12 col-sm-7 col-md-4 about-me__info">
+         <div class="col-xs-12 col-sm-7 col-md-3 about-me__info">
            <p>Full name: <span>Designer</span><br></p>
            <p>Age: <span>21</span><br></p>
            <p>Profile: <span>Fullstack</span><br></p>
            <p>Telephone: <span>+48 123-456-789</span><br></p>
            <p>E-mail: <span>night-coding@dev.com</span><br></p>
          </div>
-         <div class="col-xs-10 col-sm-10 col-md-6 about-me__description">
+         <div class="col-xs-10 col-sm-10 col-md-7 about-me__description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
          </div>
        </div>
       </div>
     </section>
     <!--Skills-->
-    <!--FIX:dotted border between element-->
-    <!--FIX:spacing bettwen image icon-title and text-->
-    <!--FIX:change class names to more BEM style -->
     <section id="skills" class="container-fluid no-gutters skills">
-      <div class="skills__tilte">
+      <div class="skills__title">
         <h3><b>Skills</b></h3>
-       <div class="row text-center">
-          <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class="row text-center skills_container">
+          <div class="col-xs-12 col-sm-6 col-md-4 skills-column1">
             <img src="img/icon_UxUi.png">
-            <h6 class="icon-title">UX/UI</h6>
+            <h6 class="skills__icon-title">UX/UI</h6>
             <p>Figma</p>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="col-xs-12 col-sm-6 col-md-4 skills-column2">
            <img src="img/icon_frontend.png">
-           <h6 class="icon-title">Front end</h6>
+           <h6 class="skills__icon-title">Front end</h6>
            <p>HTML, CSS, JavaScript</p>
           </div>
-          <div class="col-sm-12 col-md-4">
-           <img src="img/icon_backend.png">
-           <h6 class="icon-title">Back end</h6>
+          <div class="col-sm-12 col-md-4 skills-column3">
+           <img src="img/icon_backend.png ">
+           <h6 class="skills__icon-title">Back end</h6>
            <p>PHP, Node js</p>
           </div>
         </div>
@@ -121,7 +115,7 @@
         <h3><b>Portfolio</b></h3>
 
         <div id="portfolio" class="container-fluid no-gutters portfolio_container no-padding">
-          <div class="row d-flex flex-wrap align-content-stretch no-gutters text-center portfolio_photos" style:"background-size:cover;"> 
+          <div class="row d-flex flex-wrap align-content-stretch no-gutters text-center portfolio_photos"> 
             <div class="col-md-7 col-lg-4">
               <figure>
                 <img class="img-fluid portfolio_photos__photo1" src="img/portfolio_photo1.png">
