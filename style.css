@@ -137,29 +137,6 @@ ul {
     color: var(--color);
 }
 
-.form_button {
-  text-align:right;
-}
-
-.form__button {
-    margin: 0 10px;
-    border-radius: 15px;
-    border: none;
-    background: var(--btn-gradient);
-    height: 50px;
-    width: 100px;
-    color: var(--color-light);
-    font-weight: bold;
-    transition: 1s ease;
-    text-align: center;
-}
-
-.form__button:hover {
-    background: var(--background-color);
-    border: 1px dotted var(--color);
-    color: var(--color);
-}
-
 .fa-desktop {
     position: relative;
     color: var(--color-dark);
@@ -323,15 +300,15 @@ ul {
 
   .portfolio_fig__overlay button {
     
-        margin: 0 10px;
-        border-radius: 15px;
-        border: none;
-        background: var(--btn-gradient);
-        height: 50px;
-        width: 100px;
-        color: var(--color-light);
-        font-weight: bold;
-        text-align: center;
+    margin: 0 10px;
+    border-radius: 15px;
+    border: none;
+    background: var(--btn-gradient);
+    height: 50px;
+    width: 100px;
+    color: var(--color-light);
+    font-weight: bold;
+    text-align: center;
     
   }
 
@@ -363,31 +340,53 @@ ul {
     background-position: center; 
 }
 
-.contact__title {
-    padding:50px 0 0 0;
+
+.contact_container_gray-box{
+    position:relative;
 }
+
+.contact__gray-box {
+    background-color: var(--color-gray);
+    position: absolute;
+    
+    top:-50px;
+    left:0%;
+    margin: 0, auto; 
+    height: 120%; 
+    width: 100%;
+    z-index: -1;
+} 
 
 .contact_container-row {
   
-  padding: 0;
-  margin: 0, auto; 
+    padding: 0;
+    margin: 0, auto; 
+    box-shadow: var(--shadow); 
 }
 .contact-container-adress {
 
-  color: var(--color-light);
-  background-color: var(--color-middle);
+    color: var(--color-light);
+    background-color: var(--color-middle);
   
 }
 .contact-container-form {
-    background-color: var(--color-light); 
+    background-color: var(--color-light);
+    position:relative;
 }
 
+
+.contact-container-form__title {
+    position:absolute;
+    left:10%;
+    top:20px;
+}
 .contact-container-adress span {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .contact__title {
     font-family: var(--font-secondary-family);
+    padding:50px 0 0 0;
 }
 
 [class*="col-"] {
@@ -400,13 +399,38 @@ ul {
     border-top: 4px dotted var(--color);
 }
 
+.contact-container-form_form {
+    padding: 70px 0;
+    position:relative;
+}
 .form-control {
 
     background-color: var(--color-gray);
-    width: 85%;
-    margin:0 0 0 40px;
+    width: 80%;
+    margin:0 auto;
     border-radius: 15px;
     font-family: var(--font-secondary-family);
+}
+
+.form__button {
+    margin: 0 10px;
+    position:absolute;
+    right: 8%;
+    border-radius: 15px;
+    border: none;
+    background: var(--btn-gradient);
+    height: 50px;
+    width: 100px;
+    color: var(--color-light);
+    font-weight: bold;
+    transition: 1s ease;
+    text-align: center;
+}
+
+.form__button:hover {
+    background: var(--background-color);
+    border: 1px dotted var(--color);
+    color: var(--color);
 }
 
 
@@ -439,11 +463,20 @@ ul + p {
 
 footer {
     text-align: center;
-    padding: 10px 0px 5px;
+    padding: 5px 0px;
+    margin: 80px 0 0 0;
     color: #A0A0A0;
+    background-color: var(--color-light);
 }
 @media (min-width: 576px){ 
     
+
+    .form-control {
+
+        margin:0 0 0 50px;
+      
+    }
+
     .about-me__gray-box {
 
         height: 126%; 
@@ -473,7 +506,9 @@ footer {
     .skills-column3 {
         border-top: 4px dotted var(--color);
     }
- 
+    .contact__gray-box {
+        height: 118%;   
+    } 
 }
 
 @media (min-width: 768px)  { 
