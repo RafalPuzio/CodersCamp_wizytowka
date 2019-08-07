@@ -4,6 +4,7 @@
    --color-light: #ffffff;
    --color-gray: #fafaff;
    --color-dark: #222222;
+   --overlay-background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
    --shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
    --btn-gradient: linear-gradient(270deg, var(--color) 14%, var(--color-middle) 68.5%);
    --font-primary-family: 'Raleway', sans-serif;
@@ -97,6 +98,7 @@ ul {
 
 .header-info_buttons {
     text-align: center;
+    transition: 1s ease;
 }
 
 .header-info__button1 {
@@ -107,7 +109,7 @@ ul {
     width: 200px;
     color: var(--color-light);
     font-weight: bold;
-    transition: 0,5s;
+    transition: 1s ease;
     margin: 0px 40px 30px 40px;
 }
 
@@ -119,11 +121,17 @@ ul {
     width: 200px;
     color: var(--color-light);
     font-weight: bold;
-    transition: 0,5s;
+    transition: 1s ease;
     margin: 0px 40px 50px 40px;
 }
 
-.header-info__button:hover {
+.header-info__button1:hover {
+    background: var(--background-color);
+    border: 1px dotted var(--color);
+    color: var(--color);
+}
+
+.header-info__button2:hover {
     background: var(--background-color);
     border: 1px dotted var(--color);
     color: var(--color);
@@ -142,7 +150,7 @@ ul {
     width: 100px;
     color: var(--color-light);
     font-weight: bold;
-    transition: 0,5s;
+    transition: 1s ease;
     text-align: center;
 }
 
@@ -289,8 +297,43 @@ ul {
     background: url(img/portfolio_photo1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
+    position:relative; 
 }
+
+.portfolio_fig__overlay {
+    position: absolute; 
+    background: var(--overlay-background);
+    color: #f1f1f1; 
+    top:0px;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease;
+    opacity:0;
+    text-align: left;
+  }
+  
+  .portfolio_column__fig1:hover .portfolio_fig__overlay {
+    opacity: 1;
+  }
+
+  .portfolio_column__fig5:hover .portfolio_fig__overlay {
+    opacity: 1;
+  }
+
+  .portfolio_fig__overlay button {
+    
+        margin: 0 10px;
+        border-radius: 15px;
+        border: none;
+        background: var(--btn-gradient);
+        height: 50px;
+        width: 100px;
+        color: var(--color-light);
+        font-weight: bold;
+        text-align: center;
+    
+  }
 
 .portfolio_column__fig2 {
     background: url(img/portfolio_photo2.png);
@@ -320,14 +363,19 @@ ul {
     background-position: center; 
 }
 
+.contact__title {
+    padding:50px 0 0 0;
+}
+
 .contact_container-row {
-  background-color: var(--color-middle);
+  
   padding: 0;
   margin: 0, auto; 
 }
 .contact-container-adress {
 
   color: var(--color-light);
+  background-color: var(--color-middle);
   
 }
 .contact-container-form {
@@ -338,24 +386,10 @@ ul {
   font-weight: bold;
 }
 
-.contact {
-  background-color: var(--color-gray);
-}
-
 .contact__title {
     font-family: var(--font-secondary-family);
 }
 
-.row.no-gutters {
-    margin: 0;
-    padding: 0;
-  }
-  .row.no-gutters > [class^="col-"],
-  .row.no-gutters > [class*=" col-"] {
-    padding: 0;
-    padding: 0;
-  }
-  
 [class*="col-"] {
     padding:0 ;
     margin:0 ;
