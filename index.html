@@ -47,7 +47,7 @@
       <div class="header">
         <div class="header-image">
           <div class="header-image__wrapper">   
-            <div class="header-image__title"><h1 class="font-weight-bold display-1">Welcome!</h1></div>
+            <div class="header-image__title"><h1 class="font-weight-bold">Welcome!</h1></div>
             <div class="header-image__intro"><h3 class="font-weight-bold">My name is Designer.</h3></div>
               <ul class="header-image__social">
                 <li class="social-icon"><a href="https://twitter.com/" target="_blank"><img src="img/twitter.png"></a></li>
@@ -71,30 +71,33 @@
       <div class="about-me__title">
         <h3><b>About me</b></h3> 
       </div>
-      <div class="container about-me">
+      <div class="container about-me_container">
        <div class="about-me__gray-box"></div>
        <div class="row no-gutters">
-         <div class="col-xs-12 col-sm-3 col-md-2 text-center">
+         <div class="col-xs-12 col-sm-4 col-md-2 text-center">
             <img class="about-me__photo" src="img/aboutme-photo.png">
           </div>
-         <div class="col-xs-12 col-sm-7 col-md-3 about-me__info">
+         <div class="col-xs-12 col-sm-8 col-md-3 about-me__info">
            <p>Full name: <span>Designer</span><br></p>
            <p>Age: <span>21</span><br></p>
            <p>Profile: <span>Fullstack</span><br></p>
            <p>Telephone: <span>+48 123-456-789</span><br></p>
            <p>E-mail: <span>night-coding@dev.com</span><br></p>
          </div>
-         <div class="col-xs-10 col-sm-10 col-md-7 about-me__description">
+         <div class="col-xs-12 col-sm-12 col-md-7 about-me__description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ex ea commodo consequat.</p>
          </div>
        </div>
       </div>
     </section>
     <!--Skills-->
-    <section id="skills" class="container-fluid no-gutters skills">
+    <section id="skills">
       <div class="skills__title">
         <h3><b>Skills</b></h3>
-       <div class="row text-center skills_container">
+      </div>
+      <div class="container no-gutters skills_container">
+       <div class="skills__gray-box"></div>
+       <div class="row text-center skills_row">
           <div class="col-xs-12 col-sm-6 col-md-4 skills-column1">
             <img src="img/icon_UxUi.png">
             <h6 class="skills__icon-title">UX/UI</h6>
@@ -117,6 +120,7 @@
     <section id="portfolio">
       <div class="portfolio__tilte">
         <h3><b>Portfolio</b></h3>
+        </div>
         <div class=container-fluid>
           <div class="row">
             <figure class="col-12 col-sm-7 col-md-4 portfolio_column__fig1">         
@@ -150,15 +154,19 @@
       <div class="container contact_container">
         <div class="row no-gutters contact_container-row">
           <div class="col-xs-12 col-sm-12 col-md-5 contact-container-adress">
-            <img src="img/logo_message.png">
-            <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
-            <ul class="header-image__social">
-              <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
-              <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
-              <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
-              <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
-            </ul>
-            <p><span>Designer<br>Poland, Wrocław<br></span> ul. Tęczowa 12/3 50-000 <br>+48 123-456-789 <br>night-coding@dev.com</ul.>
+            <div class="contact-container-adress-upper">
+              <img src="img/logo_message.png">
+              <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+            </div>
+            <div class="contact-container-adress-lower">
+              <ul class="contact-image__social">
+                <li class="social-icon"><a href="#"><img src="img/twitter.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/linkedin.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/github.png"></a></li>
+                <li class="social-icon"><a href="#"><img src="img/facebook.png"></a></li>
+              </ul>
+              <p><span>Designer<br>Poland, Wrocław<br></span> ul. Tęczowa 12/3 50-000 <br>+48 123-456-789 <br>night-coding@dev.com</ul.>
+            </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-7 contact-container-form">
             <div class="contact-container-form__title">

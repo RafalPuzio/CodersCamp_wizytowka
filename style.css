@@ -172,16 +172,13 @@ ul {
     font-family: var(--font-primary-family);
 }
 
-.about-me {
+.about-me_container {
     background-color: var(--color-light);
     width: 85%;
     box-sizing: padding-box;
     box-shadow: var(--shadow);
-    
-    display:flex;
-    justify-content: center;
     position: relative;
-    
+
 }
 
 .about-me__title {
@@ -199,9 +196,13 @@ ul {
     z-index: -1;
 }
 .about-me__photo {
+ 
     border-radius: 50%;
-    text-align: center;
+    position:relative;
+    padding: 20px 30px;
+    
 }
+
 .about-me__info p {
     text-align: left;
     line-height: 19px;
@@ -222,6 +223,30 @@ ul {
 .about-me__title {
     font-family: var(--font-secondary-family);
 }
+
+.skills__title {
+    padding: 100px 0 0 0;
+    text-align:center;
+}
+
+.skills__gray-box {
+    background-color: var(--color-gray);
+    position: absolute;
+    right:-50px;
+    top:-50px;
+    height: 117%; 
+    width: 90%;
+    z-index: -1;
+}
+
+.skills_container {
+        background-color: var(--color-light);
+        width: 85%;
+        margin: 0 auto;
+        box-shadow: var(--shadow);
+        position: relative;
+}
+
 .skills-column1 {
     border-bottom: 4px dotted var(--color);
 }
@@ -234,10 +259,13 @@ ul {
     color: var(--color);
 }
 
-.skills_container img{
+.skills_row img{
     padding: 20px 0 0 0;
 }
 
+.portfolio__tilte {
+    padding: 100px 0 0 0;
+}
 .portfolio_container {
     padding: 0;
     margin: 0, auto;
@@ -340,14 +368,32 @@ ul {
     font-family: var(--font-secondary-family);
 }
 
+
 .contact-container-adress {
+
     position: relative;
+    min-height: 400px;
+    
+}
+.contact-container-adress-upper {
+    position: relative;
+    padding: 10px 20px 20px 30px;
+    max-width: 300px;
+  
+
 }
 
- ul + p {
-    font-family: var(--font-secondary-family);
+.contact-container-adress-lower {
     position: absolute;
-    bottom: 0; 
+    bottom: 20px;
+    left:30px;
+   
+}
+
+
+ul + p {
+    font-family: var(--font-secondary-family);
+
 } 
 
 footer {
@@ -355,7 +401,15 @@ footer {
     padding: 10px 0px 5px;
     color: #A0A0A0;
 }
-@media (min-width: 576px){  
+@media (min-width: 576px){ 
+    
+    .about-me__photo {
+ 
+        padding: 20px 10px;
+        right:10px;
+        top:20px;
+        
+    }
   
     .about-me__gray-box {
         height: 125%;
@@ -367,7 +421,14 @@ footer {
     .about-me__description {
         border-left: none;
         border-top: 4px dotted var(--color);
-     
+    }
+
+    .skills__gray-box {
+      
+        right:-120px;
+        height: 127%; 
+        width: 95%;
+        
     }
 
     .skills-column1 {
@@ -378,10 +439,12 @@ footer {
     .skills-column3 {
         border-top: 4px dotted var(--color);
     }
+ 
 }
 
 @media (min-width: 768px)  { 
 
+ 
     .about-me__gray-box {
        
         width: 95%;
@@ -398,6 +461,10 @@ footer {
         text-align: left;
         line-height: 31px;
         padding:0 0 0 20px;
+    }
+
+    .skills__gray-box {
+        height: 155%;    
     }
 
     .skills-column1 {
