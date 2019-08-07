@@ -3,7 +3,9 @@
    --color-middle:#ff9a3d;
    --color-light: #ffffff;
    --color-gray: #fafaff;
-   --color-dark: #000000;
+   --color-dark: #222222;
+   --shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+   --btn-gradient: linear-gradient(270deg, var(--color) 14%, var(--color-middle) 68.5%);
    --font-primary-family: 'Raleway', sans-serif;
    --font-secondary-family: 'Ubuntu', sans-serif;
 }
@@ -44,13 +46,11 @@ ul {
 .header-image__wrapper {
     padding-top: 100px;
     padding-bottom: 200px;
-    height:585px;
     background: url("img/cover_layer.png");
     mix-blend-mode: lighten;
     background-position: center;
+    border: 1px solid black;
 }
-
-
 
 .header-image__title {
     padding: 50px 0 0 0;
@@ -99,17 +99,28 @@ ul {
     text-align: center;
 }
 
-.header-info__button {
-    margin: 0 10px;
+.header-info__button1 {
     border-radius: 15px;
     border: none;
-    background: linear-gradient(270deg, var(--color) 14%, var(--color-middle) 68.5%);
+    background: var(--btn-gradient);
     height: 50px;
     width: 200px;
     color: var(--color-light);
     font-weight: bold;
     transition: 0,5s;
     margin: 0px 40px 30px 40px;
+}
+
+.header-info__button2 {
+    border-radius: 15px;
+    border: none;
+    background: var(--btn-gradient);
+    height: 50px;
+    width: 200px;
+    color: var(--color-light);
+    font-weight: bold;
+    transition: 0,5s;
+    margin: 0px 40px 50px 40px;
 }
 
 .header-info__button:hover {
@@ -126,7 +137,7 @@ ul {
     margin: 0 10px;
     border-radius: 15px;
     border: none;
-    background: linear-gradient(270deg, var(--color) 14%, var(--color-middle) 68.5%);
+    background: var(--btn-gradient);
     height: 50px;
     width: 100px;
     color: var(--color-light);
@@ -161,6 +172,32 @@ ul {
     font-family: var(--font-primary-family);
 }
 
+.about-me {
+    background-color: var(--color-light);
+    width: 85%;
+    box-sizing: padding-box;
+    box-shadow: var(--shadow);
+    
+    display:flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.about-me__title {
+    display:flex;
+    justify-content: center;
+}
+
+.about-me__gray-box {
+    background-color: var(--color-gray);
+    position: absolute;
+    left:-40px;
+    top:-50px;
+    height: 114%; 
+    width: 90%;
+    z-index: -1;
+}
 .about-me__photo {
     border-radius: 50%;
     text-align: center;
@@ -169,6 +206,7 @@ ul {
     text-align: left;
     line-height: 19px;
     font-weight: bold;
+    font-family: var(--font-primary-family);
 }
 
 .about-me__info span {
@@ -177,6 +215,7 @@ ul {
 .about-me__description p{
     text-align: left;
     line-height: 31px;
+    font-family: var(--font-primary-family);
     /* padding:20px 0 0 0; */
     margin:0;
 }
@@ -305,11 +344,11 @@ ul {
     position: relative;
 }
 
-p:nth-last-of-type(1){
+ ul + p {
     font-family: var(--font-secondary-family);
     position: absolute;
     bottom: 0; 
-}
+} 
 
 footer {
     text-align: center;
@@ -317,6 +356,13 @@ footer {
     color: #A0A0A0;
 }
 @media (min-width: 576px){  
+  
+    .about-me__gray-box {
+        height: 125%;
+        left:-100px;
+        width: 100%;
+      
+   }
 
     .about-me__description {
         border-left: none;
@@ -335,6 +381,13 @@ footer {
 }
 
 @media (min-width: 768px)  { 
+
+    .about-me__gray-box {
+       
+        width: 95%;
+        height:135%;
+        
+   }
     .about-me__description {
         border-top: none;
         border-left: 4px dotted var(--color);
@@ -359,6 +412,12 @@ footer {
 }
 
 @media (min-width: 992px)  { 
+
+    .about-me__gray-box {
+        height: 145%;
+        width:95%;
+      
+   }
 .about-me__description {
     border-top: none;
     border-left: 4px dotted var(--color);
@@ -366,6 +425,10 @@ footer {
 }
 }
 @media (min-width: 1200px) { 
+    .about-me__gray-box {
+        height: 160%; 
+   }
+
 .about-me__description {
     border-top: none;
     border-left: 4px dotted var(--color);
